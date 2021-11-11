@@ -15,7 +15,7 @@ Scenario Outline: Login with credentials
 Given I am on the loginPage
 When I enter Username '<username>'
 And I enter Password '<password>'
-And I click on the Login button
+
 
 
 Examples:

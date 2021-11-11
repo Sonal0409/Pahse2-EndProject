@@ -17,8 +17,7 @@ public class Loginpage extends TestBase{
 	WebElement eml;
 	@FindBy(id="passwd")
 	WebElement pwd;
-	@FindBy(xpath="(//button[@type='submit'])[3]")
-	WebElement signin;
+	
 	
 	public Loginpage()
 	{
@@ -47,12 +46,6 @@ public class Loginpage extends TestBase{
 		pwd.sendKeys(password);
 	}
 	
-	public void clicksignin()
-	{
-		JavascriptExecutor js = ((JavascriptExecutor)driver);
-		js.executeScript("arguments[1].scrollIntoView(true)",signin);
-		signin.click();
-	}
-	
+
 
 }

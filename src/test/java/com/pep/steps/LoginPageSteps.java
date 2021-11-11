@@ -65,12 +65,7 @@ public class LoginPageSteps extends TestBase{
 		Thread.sleep(2000);
 	   
 	}
-	@When("I click on the Login button")
-	public void i_click_on_the_login_button() {
-		
-		lp.clicksignin();
-	   
-	}
+	
 	
 	
 	
