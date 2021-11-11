@@ -1,0 +1,275 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-11T12:07:48.837Z",
+        "line": 23,
+        "name": "Login with credentials",
+        "description": "",
+        "id": "automationpractice-page-test;login-with-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 166855300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.pep.steps.LoginPageSteps.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7614007200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I am on the loginPage",
+            "match": {
+              "location": "com.pep.steps.LoginPageSteps.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 114422600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter Username \u0027sonal04@gmail.com\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027sonal04@gmail.com\u0027",
+                  "offset": 17
+                }
+              ],
+              "location": "com.pep.steps.LoginPageSteps.i_enter_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2117508800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I enter Password \u0027abc@123\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027abc@123\u0027",
+                  "offset": 17
+                }
+              ],
+              "location": "com.pep.steps.LoginPageSteps.i_enter_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable: element has zero size\n  (Session info: chrome\u003d95.0.4638.69)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-DOBLN3AU\u0027, ip: \u0027192.168.1.14\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\\Users\\sonal\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56837}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0b389b5fde61b80861a90ec98c505d86\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy21.click(Unknown Source)\r\n\tat com.pep.pages.Loginpage.clicksignin(Loginpage.java:51)\r\n\tat com.pep.steps.LoginPageSteps.i_click_on_the_login_button(LoginPageSteps.java:71)\r\n\tat ✽.I click on the Login button(file:///C:/Users/sonal/eclipse-workspace/Phase2-EndProject/src/test/java/com/pep/features/LoginPage.feature:18)\r\n",
+              "duration": 60519000,
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "I click on the Login button",
+            "match": {
+              "location": "com.pep.steps.LoginPageSteps.i_click_on_the_login_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-11T12:07:59.088Z",
+        "line": 24,
+        "name": "Login with credentials",
+        "description": "",
+        "id": "automationpractice-page-test;login-with-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 163450800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.pep.steps.LoginPageSteps.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7882461200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I am on the loginPage",
+            "match": {
+              "location": "com.pep.steps.LoginPageSteps.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 100349700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter Username \u0027admin@gmail.com\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027admin@gmail.com\u0027",
+                  "offset": 17
+                }
+              ],
+              "location": "com.pep.steps.LoginPageSteps.i_enter_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2140352300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I enter Password \u0027admin@123\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027admin@123\u0027",
+                  "offset": 17
+                }
+              ],
+              "location": "com.pep.steps.LoginPageSteps.i_enter_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1713140500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on the Login button",
+            "match": {
+              "location": "com.pep.steps.LoginPageSteps.i_click_on_the_login_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-11T12:08:11.099Z",
+        "line": 25,
+        "name": "Login with credentials",
+        "description": "",
+        "id": "automationpractice-page-test;login-with-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 209733300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.pep.steps.LoginPageSteps.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7107002900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I am on the loginPage",
+            "match": {
+              "location": "com.pep.steps.LoginPageSteps.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 86280200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter Username \u0027emp@gmail.com\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027emp@gmail.com\u0027",
+                  "offset": 17
+                }
+              ],
+              "location": "com.pep.steps.LoginPageSteps.i_enter_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2129300600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I enter Password \u0027emp@123\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027emp@123\u0027",
+                  "offset": 17
+                }
+              ],
+              "location": "com.pep.steps.LoginPageSteps.i_enter_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1460138200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on the Login button",
+            "match": {
+              "location": "com.pep.steps.LoginPageSteps.i_click_on_the_login_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "AutomationPractice page test",
+    "description": "",
+    "id": "automationpractice-page-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/pep/features/LoginPage.feature",
+    "tags": []
+  }
+]
